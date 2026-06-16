@@ -1,4 +1,4 @@
-"""V6b configuration — OpenNMT Transformer with self-contained mass quantization.
+"""V6b configuration �?OpenNMT Transformer with self-contained mass quantization.
 
 Mass bins are constructed identically to V6a (532 bins, same edges/centers)
 but defined here to avoid the PyTorch import chain triggered by src.model.v6.
@@ -10,7 +10,7 @@ from typing import List, Tuple
 
 
 def _build_mass_bins() -> List[Tuple[float, float, float]]:
-    """Identical to V6Config._build_mass_bins — 532 bins across core/outer/extreme."""
+    """Identical to V6Config._build_mass_bins �?532 bins across core/outer/extreme."""
     bins = []
     # Core [-100, 200) @ 1 Da
     for left in range(-100, 200):
@@ -53,9 +53,9 @@ class V6bConfig:
     dropout: float = 0.1
 
     # ── Training ───────────────────────────────────────────────────────────
-    batch_size: int = 4096
-    batch_type: str = "tokens"
-    accum_count: int = 4
+    batch_size: int = 64
+    batch_type: str = "sents"
+    accum_count: int = 2
     learning_rate: float = 2.0
     warmup_steps: int = 8000
     train_steps: int = 50000
