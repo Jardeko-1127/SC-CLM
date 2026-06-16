@@ -1,0 +1,64 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+venv/
+venv_v6b/
+.venv/
+ENV/
+
+# Models (downloaded from HuggingFace)
+models/
+*.ckpt
+*.pt
+*.bin
+*.safetensors
+
+# Data
+data/
+*.csv
+
+# Results & Checkpoints
+results/
+outputs/
+checkpoints/
+
+# Logs
+logs/
+log/
+*.log
+
+# IDE & Tools
+.vscode/
+.idea/
+.DS_Store
+.claude/
+.agents/
+.antigravity-rules/
+
+# Large external tools
+tools/apache-maven-3.9.15/
+tools/biotransformer/
+tools/maven.zip
+tools/metatrans/
+
+# Reference archives
+ref/
+
+# Scratch data
+scratch/archive/
+scratch/cts/
+scratch/metareact_clone/
+scratch/server/
+scratch/__pycache__/
+scratch/cts_input_*.csv
+scratch/*.html
+
+# Skills
+skills/
+
+# OS
+Thumbs.db

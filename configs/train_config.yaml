@@ -1,0 +1,9 @@
+model_name: "laituan245/molt5-small"
+output_dir: "results/checkpoints/v4_model"
+train_csv: "data/processed/train.csv"
+val_csv: "data/processed/val.csv"
+test_csv: "data/processed/test.csv"
+num_epochs: 15
+batch_size: 8
+learning_rate: 1e-4
+seed: 42
